@@ -1,0 +1,32 @@
+
+.intro { 
+    text-align: center; 
+    font-family: Arial;
+  }
+
+  #image-gallery { 
+    width: 600px; 
+    height:800px;
+    margin: 0 auto;
+  }
+  
+  #current-image { 
+    width: 100%;
+    border-style:solid;
+    border-width: 2px;
+  } 
+  
+  #image-thumbs { 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 0;
+  }
+  
+  .thumb { 
+    width: 60px; 
+    height: 60px; 
+    object-fit: cover; 
+    margin-right: 10px; 
+    cursor: pointer;
+  }
+  
