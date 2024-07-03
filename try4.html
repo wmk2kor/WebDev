@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotanicBliss</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <img src="img1.jpg" alt="Site Icon" class="icon">
+        <h1>BotanicBliss</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="showContent('home')">Home</a></li>
+            <li><a href="#about" onclick="showContent('about')">About</a></li>
+            <li><a href="#services" onclick="showContent('services')">Services</a></li>
+            <li><a href="#contact" onclick="showContent('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hidden divs with content for each section -->
+    <div id="home-content" style="display: none;">
+        <h2>Home</h2>
+        <img src="img2.jpg" alt="Home Picture" class="section-img">
+        <ul>
+            <li>Breathe Easy: Indoor plants purify the air, reducing toxins and promoting a healthier environment.</li>
+            <li>Boost Your Mood: Surround yourself with greenery to reduce stress and elevate your mood.</li>
+            <li>Enhance Your Space: Add a touch of elegance and nature’s charm to any room with our stunning plant varieties.</li>
+            <li>Improve Focus: Studies show that indoor plants can increase concentration and productivity—perfect for your home office.</li>
+            <li>Effortless Style: From chic succulents to lush ferns, our plants are stylish and low maintenance, making it easy to enjoy their benefits.</li>
+        </ul>
+    </div>
+
+    <div id="about-content" style="display: none;">
+        <h2>About</h2>
+        <img src="img3.jpg" alt="About Picture" class="section-img">
+        
+        <p>Join the Botanic Bliss Community</p>
+        <p>Whether you’re a seasoned plant parent or just starting your green journey, Botanic Bliss is here to help. Explore our range of carefully selected plants, pots, and accessories to find the perfect addition to your home.</p>
+        <p>Let’s Grow Together</p>
+        <p>Dive into our blog for tips, tricks, and inspiration on how to care for your plants and create your own indoor paradise. At Botanic Bliss, we’re more than just a plant store—we’re your partner in cultivating a happier, healthier home.</p>
+    </div>
+
+    <div id="services-content" style="display: none;">
+        <h2>Services</h2>
+        <img src="img4.jpg" alt="Services Picture" class="section-img">
+        
+        <ul>
+            <li>Personalized Plant Recommendations</li>
+            <li>Plant Care Guidance</li>
+            <li>Custom Planter Design</li>
+            <li>Workshops and Events</li>
+            <li>Subscription Service</li>
+            <li>Gift Services</li>
+            <li>Corporate Services</li>
+            <li>Delivery and Setup</li>
+        </ul>
+    </div>
+
+    <div id="contact-content" style="display: none;">
+        <h2>Contact</h2>
+      
+        <p>Stay connected and inspired! Follow us on our social media channels for the latest updates, tips, and plant care inspiration.</p>
+        <p>Facebook: <a href="http://facebook.com/botanicbliss" target="_blank">facebook.com/botanicbliss</a></p>
+        <p>Instagram: <a href="http://instagram.com/botanicbliss" target="_blank">instagram.com/botanicbliss</a></p>
+        <p>Twitter: <a href="http://twitter.com/botanicbliss" target="_blank">twitter.com/botanicbliss</a></p>
+        <p>Pinterest: <a href="http://pinterest.com/botanicbliss" target="_blank">pinterest.com/botanicbliss</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BotanicBliss. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showContent(section) {
+            const sections = ['home', 'about', 'services', 'contact'];
+            sections.forEach(sec => {
+                document.getElementById(`${sec}-content`).style.display = 'none';
+            });
+            document.getElementById(`${section}-content`).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
